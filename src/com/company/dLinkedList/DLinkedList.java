@@ -146,17 +146,6 @@ public class DLinkedList<T> implements Iterable<T> {
         return oldValue;
     }
 
-    //    @SafeVarargs
-//    public final boolean addAll(T... values) {
-//        boolean result = values != null;
-//        if (result) {
-//            for (T value : values) {
-//                add(value);
-//            }
-//        }
-//        return result;
-//
-//    }
     @SafeVarargs
     public final boolean addAll(T... values) {
         boolean result = values != null;
@@ -201,7 +190,6 @@ public class DLinkedList<T> implements Iterable<T> {
         }
         return node;
     }
-
 
     private boolean removeByNode(Node node) {
         boolean canBeRemoved = node != null;
